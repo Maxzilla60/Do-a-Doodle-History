@@ -24,10 +24,16 @@ order: 3
                         {{ monthEntry.prompt.data.title }}
                     </a>
                 {% else %}
-                    <i>{{ monthEntry.prompt.data.title }}</i>
+                    <i>N/A</i>
                 {% endif %}
             </td>
-            <td class="submissions">{{ monthEntry.prompt.data.submissions-count }}</td>
+            <td class="submissions">
+                {% if monthEntry.prompt.data.permalink != false %}
+                    {{ monthEntry.prompt.data.submissions-count }}
+                {% else %}
+                    <i>-</i>
+                {% endif %}
+            </td>
         </tr>
     {% endfor %}
     {% endfor %}
