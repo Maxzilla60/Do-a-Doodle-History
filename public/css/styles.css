@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Comic Helvetic';
+    src: url('Comic Helvetic - Light.otf');
+    font-weight: 100;
+}
+
 * {
     font-size: 1em;
 }
@@ -91,6 +97,14 @@ h1 {
 
 i {
     color: hsl(0 0% 50% / 1);
+}
+
+p {
+    font-family: 'Comic Helvetic', 'Short Stack', cursive;
+
+    > b {
+        font-family: 'Short Stack', cursive;
+    }
 }
 
 @media (min-width: 1000px) {
