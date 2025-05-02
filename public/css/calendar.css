@@ -22,10 +22,10 @@ li {
     margin: 0 2vw;
     text-align: center;
     border-image: url(button.svg) 10 10 10 10 stretch stretch;
-}
 
-li:not(:last-child) {
-    margin-bottom: 1vh;
+    &:not(:last-child) {
+        margin-bottom: 1vh;
+    }
 }
 
 .month {
@@ -60,9 +60,9 @@ li:not(:last-child) {
     li {
         padding: 0;
         margin: 0;
-    }
 
-    li:not(:last-child) {
-        margin-bottom: 0;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
     }
 }

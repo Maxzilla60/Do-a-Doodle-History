@@ -8,35 +8,39 @@ header {
     align-items: center;
     margin-bottom: 1vh;
     margin-top: 1vh;
+
+    img {
+        width: 90vw;
+        border: none;
+    }
+
+    > h1 {
+        font-size: 1em;
+        margin: 0;
+    }
 }
 
-header img {
-    width: 90vw;
-    border: none;
-}
+a {
+    color: darkblue;
 
-header > h1 {
-    font-size: 1em;
-    margin: 0;
-}
+    &:visited {
+        color: purple;
+    }
 
-a:visited {
-    color: purple;
-}
-
-a:not([href]) {
-    color: hsl(0 0% 50% / 1);
+    &:not([href]) {
+        color: hsl(0 0% 50% / 1);
+    }
 }
 
 nav {
     display: flex;
     flex-flow: column;
-}
 
-nav > a {
-    font-size: 0.9em;
-    text-align: center;
-    margin-bottom: 1vh;
+    > a {
+        font-size: 0.9em;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
 }
 
 main {
@@ -66,25 +70,23 @@ small {
     margin-bottom: 1vh;
     background-color: hsl(30 90% 90% / 1);
     text-align: center;
-}
 
-.info > p:not(:last-child) {
-    margin-top: 0;
-    margin-bottom: 2vh;
-}
+    > p {
+        &:not(:last-child) {
+            margin-top: 0;
+            margin-bottom: 2vh;
+        }
 
-.info > p:last-child {
-    margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 h1 {
     font-size: 1.2em;
     margin: 2.5vh 0 1vh;
     text-align: center;
-}
-
-a {
-    color: darkblue;
 }
 
 i {
@@ -101,12 +103,14 @@ i {
         margin: auto;
     }
 
-    header img {
-        width: 600px;
-    }
+    header {
+        img {
+            width: 600px;
+        }
 
-    header > h1 {
-        font-size: 2em;
+        > h1 {
+            font-size: 2em;
+        }
     }
 
     nav {
