@@ -12,9 +12,9 @@ order: 4
 </noscript>
 <script>
 	const prompts = [
-		{% for prompt in visitablePrompts %}
+		{%- for prompt in visitablePrompts -%}
 		'{{ prompt.url }}',
-		{% endfor %}
+		{%- endfor -%}
 	];
 
 	window.location.href = randomChoice(prompts);
